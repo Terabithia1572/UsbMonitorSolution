@@ -13,15 +13,15 @@ Uygulamanın modern arayüzü ve temel özellikleri:
 
 | **📊 Canlı Log Takibi (Dashboard)** | **⚙️ Servis Yönetim Paneli** |
 |:---:|:---:|
-| ![Log Dashboard](assets/screenshots/logDashboard.png) <br> *Anlık dosya hareketleri, Hash bilgisi ve Kaynak tespiti* | ![Servis Kontrol](assets/screenshots/serviceProcess.png) <br> *Windows servisini arayüzden durdur/başlat* |
+| ![Log Dashboard](UsbMonitorAgent/Assets/screenshots/logDashboard.png) <br> *Anlık dosya hareketleri, Hash bilgisi ve Kaynak tespiti* | ![Servis Kontrol](UsbMonitorAgent/Assets/screenshots/serviceProcess.png) <br> *Windows servisini arayüzden durdur/başlat* |
 
 | **🔐 Güvenli Yönetici Girişi** | **💾 USB Donanım Detayları** |
 |:---:|:---:|
-| ![Kullanıcı Girişi](assets/screenshots/userLogin.png) <br> *SHA256 korumalı yetkili giriş ekranı* | ![USB Bilgisi](assets/screenshots/USBDeviceInfo.png) <br> *VID, PID ve Serial Number (SN) analizi* |
+| ![Kullanıcı Girişi](UsbMonitorAgent/Assets/screenshots/userLogin.png) <br> *SHA256 korumalı yetkili giriş ekranı* | ![USB Bilgisi](UsbMonitorAgent/Assets/screenshots/USBDeviceInfo.png) <br> *VID, PID ve Serial Number (SN) analizi* |
 
 | **🔔 Sistem Tepsisi (Tray Menu)** | **📂 Genel Görünüm** |
 |:---:|:---:|
-| ![Tray Icon](assets/screenshots/trayicon.png) <br> *Hızlı erişim menüsü ve durum kontrolü* | ![Genel Bakış](assets/screenshots/dashboard.png) <br> *Kullanıcı dostu veri tablosu* |
+| ![Tray Icon](UsbMonitorAgent/Assets/screenshots/trayicon.png) <br> *Hızlı erişim menüsü ve durum kontrolü* | ![Genel Bakış](UsbMonitorAgent/Assets/screenshots/dashboard.png) <br> *Kullanıcı dostu veri tablosu* |
 
 ---
 
