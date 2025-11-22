@@ -1,0 +1,73 @@
+﻿<Window x:Class="UsbMonitorAgent.UI.Windows.ServiceControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Servis Yöneticisi" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize"
+        AllowsTransparency="True" Background="Transparent"
+        Loaded="Window_Loaded">
+
+    <Border CornerRadius="15" Background="#FDFDFD" Margin="15">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="15" ShadowDepth="5" Opacity="0.3" Color="Black"/>
+        </Border.Effect>
+
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Servis Yöneticisi" FontSize="18" FontWeight="Bold" Foreground="#333" VerticalAlignment="Center"/>
+            <Button Content="✕" HorizontalAlignment="Right" Click="Close_Click"
+                    Background="Transparent" BorderThickness="0" Foreground="#999" 
+                    FontSize="16" FontWeight="Bold" Cursor="Hand"/>
+
+            <Border Grid.Row="1" Margin="0,20,0,20" CornerRadius="8" Background="#F0F0F0" Padding="15">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Ellipse x:Name="StatusLight" Width="12" Height="12" Fill="Gray" Margin="0,0,10,0"/>
+                    <TextBlock x:Name="StatusText" Text="Durum Kontrol Ediliyor..." FontWeight="SemiBold" Foreground="#555"/>
+                </StackPanel>
+            </Border>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BtnStart" Content="BAŞLAT" Grid.Column="0" Margin="0,0,5,0" Height="45"
+                        Click="BtnStart_Click" Background="#28a745" Foreground="White" FontWeight="Bold"
+                        BorderThickness="0" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="BtnStop" Content="DURDUR" Grid.Column="1" Margin="5,0,5,0" Height="45"
+                        Click="BtnStop_Click" Background="#dc3545" Foreground="White" FontWeight="Bold"
+                        BorderThickness="0" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="BtnRestart" Content="YENİDEN&#10;BAŞLAT" Grid.Column="2" Margin="5,0,0,0" Height="45"
+                        Click="BtnRestart_Click" Background="#007bff" Foreground="White" FontWeight="Bold"
+                        BorderThickness="0" Cursor="Hand" FontSize="11">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

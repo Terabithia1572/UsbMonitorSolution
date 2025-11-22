@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="UsbMonitorAgent/UsbMonitorAgent.csproj" />
+  <Project Path="UsbMonitorService/UsbMonitorService.csproj" />
+</Solution>

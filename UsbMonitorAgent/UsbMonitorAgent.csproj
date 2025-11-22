@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ApplicationIcon>Assets\Icons\app.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Assets\Icons\app.png" />
+		<None Remove="Assets\Icons\icon_exit.png" />
+		<None Remove="Assets\Icons\icon_logs.png" />
+		<None Remove="Assets\Icons\icon_service.png" />
+		<None Remove="Assets\Icons\icon_service_manage.png" />
+		<None Remove="Assets\Icons\icon_service_managee.png" />
+		<None Remove="Assets\Icons\icon_settings.png" />
+		<None Remove="Assets\Icons\icon_usb_info.png" />
+		<None Remove="Assets\Icons\icon_usb_list.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<COMReference Include="Shell32">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>0</VersionMinor>
+			<VersionMajor>1</VersionMajor>
+			<Guid>50a7e9b0-70ef-11d1-b75a-00a0c90564fe</Guid>
+			<Lcid>0</Lcid>
+			<Isolated>false</Isolated>
+			<EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+		<COMReference Include="SHDocVw">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>1</VersionMinor>
+			<VersionMajor>1</VersionMajor>
+			<Guid>eab22ac0-30c1-11cf-a7eb-0000c05bae0b</Guid>
+			<Lcid>0</Lcid>
+			<Isolated>false</Isolated>
+			<EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\Icons\app.ico">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_exit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_service_manage.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_service_managee.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_settings.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EPPlus" Version="6.2.19" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0" />
+		<PackageReference Include="System.Management" Version="7.0.0" />
+		<PackageReference Include="System.ServiceProcess.ServiceController" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\Icons\app.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_logs.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_service.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_usb_info.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Icons\icon_usb_list.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>
