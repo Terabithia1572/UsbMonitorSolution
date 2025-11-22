@@ -82,6 +82,22 @@ Veriler `C:\ProgramData\UsbMonitor\usb_logs.db` konumunda saklanır.
 | `FileHash` | TEXT | Dosyanın SHA256 Hash değeri |
 
 ---
+---
+## 📥 İndir (Download)
+<div align="center">
+
+📥 İndir (Download)
+Projeyi derlemekle uğraşmak istemiyorsanız, hazır kurulum (Setup) dosyasını doğrudan aşağıdan indirebilirsiniz:
+
+<a href="https://drive.google.com/file/d/10VLbPvbSWoSvfqFagYE_XbMst19eJ-gl/view?usp=sharing"> <img src="https://img.shields.io/badge/Google_Drive-Download_Setup.rar-4285F4?style=for-the-badge&logo=google-drive&logoColor=white&height=40" height="50" alt="Download Button"> </a>
+
+
+
+⚠️ Önemli Not: İndirdiğiniz dosyayı klasöre çıkartıp USBMonitorInstaller.exe ile kurulumu başlatabilirsiniz.
+
+</div>
+
+---
 
 ## 🚀 Kurulum ve Çalıştırma
 
@@ -100,25 +116,15 @@ sc.exe delete UsbMonitorService
 # Örnek: bin\Release\net8.0-windows\win-x64\UsbMonitorService.exe
 sc.exe create UsbMonitorService binPath= "C:\ProjeYolu\UsbMonitorService.exe" start= auto
 
+# Servisi başlat
+sc.exe start UsbMonitorService
+
 3. Agent'ı Başlatma
 UsbMonitorAgent.exe uygulamasını çalıştırın. Sistem tepsisine (sağ alt) yerleşecektir.
 
 Varsayılan Giriş: yonet / Qq123456
 
 Sağ tık menüsünden "Admin Ayarları" ile şifrenizi değiştirebilirsiniz.
-
-<div align="center">
-
-📥 İndir (Download)
-Projeyi derlemekle uğraşmak istemiyorsanız, hazır kurulum (Setup) dosyasını doğrudan aşağıdan indirebilirsiniz:
-
-<a href="https://drive.google.com/file/d/10VLbPvbSWoSvfqFagYE_XbMst19eJ-gl/view?usp=sharing"> <img src="https://img.shields.io/badge/Google_Drive-Download_Setup.rar-4285F4?style=for-the-badge&logo=google-drive&logoColor=white&height=40" height="50" alt="Download Button"> </a>
-
-
-
-⚠️ Önemli Not: İndirdiğiniz dosyayı klasöre çıkartıp USBMonitorInstaller.exe ile kurulumu başlatabilirsiniz.
-
-</div>
 
 🛠️ Kullanılan Teknolojiler & Kütüphaneler
 .NET 6.0 / 8.0 (Windows)
@@ -138,6 +144,3 @@ Yunus İNAN 🚀 .NET Developer | Security & Monitoring Enthusiast 📧 İletiş
 
 📜 Lisans
 Bu proje MIT License altında lisanslanmıştır. Güvenlik ve denetim amaçlı eğitim/kurumsal kullanım için geliştirilmiştir.
-
-# Servisi başlat
-sc.exe start UsbMonitorService
