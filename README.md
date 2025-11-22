@@ -112,16 +112,27 @@ Sağ tık menüsünden "Admin Ayarları" ile şifrenizi değiştirebilirsiniz.
 
 ---
 
+---
+
+<div align="center">
+
 ## 📥 İndir (Download)
 
 Projeyi derlemekle uğraşmak istemiyorsanız, hazır kurulum (Setup) dosyasını doğrudan aşağıdan indirebilirsiniz:
 
-[![Download Setup](https://img.shields.io/badge/Google_Drive-Download_Setup.rar-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/10VLbPvbSWoSvfqFagYE_XbMst19eJ-gl/view?usp=sharing)
+<br>
 
-> **Not:** İndirdiğiniz dosyayı klasöre çıkartıp `USBMonitorInstaller.exe` ile kurulumu başlatabilirsiniz.
+<a href="https://drive.google.com/file/d/10VLbPvbSWoSvfqFagYE_XbMst19eJ-gl/view?usp=sharing">
+  <img src="https://img.shields.io/badge/Google_Drive-Download_Setup.rar-4285F4?style=for-the-badge&logo=google-drive&logoColor=white&height=40" height="50" alt="Download Button">
+</a>
+
+<br><br>
+
+> **⚠️ Önemli Not:** İndirdiğiniz dosyayı klasöre çıkartıp **`USBMonitorInstaller.exe`** ile kurulumu başlatabilirsiniz.
+
+</div>
 
 ---
-
 
 🛠️ Kullanılan Teknolojiler & Kütüphaneler
 .NET 6.0 / 8.0 (Windows)
