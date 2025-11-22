@@ -117,7 +117,7 @@ Sağ tık menüsünden "Admin Ayarları" ile şifrenizi değiştirebilirsiniz.
 Projeyi derlemekle uğraşmak istemiyorsanız, hazır kurulum (Setup) dosyasını doğrudan aşağıdan indirebilirsiniz:
 
 [![Download Setup](https://img.shields.io/badge/Google_Drive-Download_Setup.rar-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/10VLbPvbSWoSvfqFagYE_XbMst19eJ-gl/view?usp=sharing)
-  
+
 > **Not:** İndirdiğiniz dosyayı klasöre çıkartıp `USBMonitorInstaller.exe` ile kurulumu başlatabilirsiniz.
 
 ---
